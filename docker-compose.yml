@@ -11,18 +11,18 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   pulsar:
     build: ./pulsar
     volumes:
       - ./data/analytics-platform/pulsar:/pulsar/data
-    depends_on:
-      - data-pipeline
     mem_limit: 6gb
     healthcheck:
       test: [ "CMD-SHELL", "pulsar-admin brokers healthcheck" ]
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   redis:
     image: redis:latest
     mem_limit: 2gb
@@ -33,6 +33,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   clickhouse:
     image: clickhouse/clickhouse-server:latest
     mem_limit: 16gb
@@ -47,6 +48,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   superset:
     build: ./superset
     environment:
@@ -66,6 +68,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
   gateway:
     build: ./bao-api-gateway
     mem_limit: 2gb
@@ -76,6 +79,7 @@ services:
     depends_on:
       - identity
       - data-pipeline
+    restart: unless-stopped
   identity:
     build: ./bao-identity
     mem_limit: 2gb
@@ -88,6 +92,14 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+      pulsar:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8086/status" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
   data-pipeline:
     build: ./bao-data-pipeline
     mem_limit: 6gb
@@ -101,6 +113,14 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+      pulsar:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8084/status" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
   dhis2-gateway:
     build: ./dhis2-superset-gateway
     mem_limit: 2gb
@@ -111,6 +131,12 @@ services:
     depends_on:
       superset:
         condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8085/status" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
   proxy:
     image: nginx:latest
     ports:
@@ -128,4 +154,5 @@ services:
         condition: service_started
       superset:
         condition: service_started
+    restart: unless-stopped
 
