@@ -6,7 +6,8 @@ RUN apk add openjdk17 wget
 
 WORKDIR /app
 
-RUN wget https://bao-products-builds.s3.us-east-1.amazonaws.com/analytics-platform/master/bao-api-gateway.jar
+RUN wget -o bao-api-gateway.jar https://bao-products-builds.s3.us-east-1.amazonaws.com/dhis2-superset-gateway/master/dhis2-superset-gateway.jar
+
 
 RUN chmod +x bao-api-gateway.jar
 
