@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="feat: added health checks to all containers">
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: update jar download URL for dhis2-superset-gateway">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/bao-api-gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/bao-data-pipeline.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/bao-identity.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/dhis2-superset-gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pulsar.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/superset.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="29" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +44,10 @@
     &quot;accountId&quot;: &quot;f679fa9b-ab38-4bdf-a5ca-34bb54cd9b95&quot;
   }
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -45,13 +58,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.dhis2-superset-gateway/Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.clickhouse: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.proxy: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -66,6 +82,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1767337224141" />
+    <option name="spentUsd" value="0.0277672" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="5" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/nginx/config" />
@@ -74,10 +97,25 @@
       <recent name="$PROJECT_DIR$/base" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.dhis2-superset-gateway/Dockerfile">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dhis2-superset-gateway/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="dhis2-superset-gateway/Dockerfile" />
+        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -117,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.dhis2-superset-gateway/Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.clickhouse: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.proxy: Compose Deployment" />
@@ -126,7 +165,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.242" />
       </set>
     </attachedChunks>
   </component>
@@ -139,7 +178,10 @@
       <updated>1714468927219</updated>
       <workItem from="1761222370964" duration="15944000" />
       <workItem from="1762951583132" duration="898000" />
-      <workItem from="1764442649880" duration="2025000" />
+      <workItem from="1764442649880" duration="6019000" />
+      <workItem from="1765298970234" duration="988000" />
+      <workItem from="1766947129305" duration="3068000" />
+      <workItem from="1768568380220" duration="449000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -157,7 +199,47 @@
       <option name="project" value="LOCAL" />
       <updated>1764444214301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: added health checks to all containers">
+      <option name="closed" value="true" />
+      <created>1764444995473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764444995473</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: fixed health checks for gateway and dhis2-gateway services">
+      <option name="closed" value="true" />
+      <created>1764445061762</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764445061762</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: updated the download URL for dhis2-superset-gateway jar">
+      <option name="closed" value="true" />
+      <created>1765299027418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765299027418</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: exposed port 8092 for dhis2-superset-gateway service&#10;Fixes #1">
+      <option name="closed" value="true" />
+      <created>1766947316757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766947316757</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: update jar download URL for dhis2-superset-gateway">
+      <option name="closed" value="true" />
+      <created>1766950661030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766950661030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +248,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: setup docker implementation of the analytics-platform" />
     <MESSAGE value="feat: added health checks to all containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added health checks to all containers" />
+    <MESSAGE value="fix: fixed health checks for gateway and dhis2-gateway services" />
+    <MESSAGE value="fix: updated the download URL for dhis2-superset-gateway jar" />
+    <MESSAGE value="fix: exposed port 8092 for dhis2-superset-gateway service&#10;Fixes #1" />
+    <MESSAGE value="fix: update jar download URL for dhis2-superset-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update jar download URL for dhis2-superset-gateway" />
   </component>
 </project>
