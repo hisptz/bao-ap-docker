@@ -1,8 +1,8 @@
-FROM ubuntu:24.04
+FROM alpine:latest
 
-RUN apt update && apt upgrade -y
+RUN apk update && apk upgrade
 
-RUN apt install wget  openjdk-17-jdk -y
+RUN apk add --no-cache openjdk17-jdk wget
 
 WORKDIR /app
 
