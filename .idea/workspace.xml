@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: fixed pulsar Dockerfile to use alpine instead of ubuntu">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/analytics-platform-release.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/conventionalCommit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/bao-api-gateway/config/bao-api-gateway.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/bao-data-pipeline/config/bao-data-pipeline-key.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/bao-data-pipeline/config/bao-data-pipeline.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/bao-identity/config/bao-identity.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/clickhouse/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/clickhouse/config/performance.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/data/analytics-platform/bao-data-pipeline/bao-ap-client-main/placeholder.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/db/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/dhis2-superset-gateway/config/dhis2-superset-gateway.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/superset.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/superset/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/superset/config/superset_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/bao-api-gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bao-api-gateway.yml" afterDir="false" />
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: added GitHub Actions workflow for releasing analytics platform">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/analytics-platform-release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/analytics-platform-release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pulsar.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pulsar/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,10 +87,10 @@
 }]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1770271893425" />
-    <option name="spentUsd" value="0.037694253" />
+    <option name="spentUsd" value="0.051157553" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="1" />
+    <option name="suspendCountdown" value="0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -209,7 +193,7 @@
       <workItem from="1764442649880" duration="6019000" />
       <workItem from="1765298970234" duration="988000" />
       <workItem from="1766947129305" duration="3068000" />
-      <workItem from="1768568380220" duration="5744000" />
+      <workItem from="1768568380220" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -283,7 +267,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768573950701</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chore: added GitHub Actions workflow for releasing analytics platform">
+      <option name="closed" value="true" />
+      <created>1768574716689</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768574716689</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chore: added GitHub Actions workflow for releasing analytics platform">
+      <option name="closed" value="true" />
+      <created>1768574830310</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1768574830311</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +298,7 @@
     <MESSAGE value="fix: update jar download URL for dhis2-superset-gateway" />
     <MESSAGE value="chore: added workflows to build docker images for ap services" />
     <MESSAGE value="chore: fixed pulsar Dockerfile to use alpine instead of ubuntu" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: fixed pulsar Dockerfile to use alpine instead of ubuntu" />
+    <MESSAGE value="chore: added GitHub Actions workflow for releasing analytics platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: added GitHub Actions workflow for releasing analytics platform" />
   </component>
 </project>

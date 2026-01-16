@@ -30,7 +30,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: analytics-platform-${{ steps.date.outputs.date }}
-          name: Release Analytics Platform ${{ steps.date.outputs.date }}
+          name: Analytics Platform Docker ${{ steps.date.outputs.date }}
           files: analytics-platform.zip
           draft: false
           prerelease: false
