@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: refactored pulsar to use the official docker image instead of building from scratch">
-      <change afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.pulsar.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: refactored pulsar to a separate docker-compose and using the official pulsar image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/dhis2-superset-gateway/config/dhis2-superset-gateway.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/dhis2-superset-gateway/config/dhis2-superset-gateway.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/bao-api-gateway/config/bao-api-gateway.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/bao-api-gateway/config/bao-api-gateway.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="2530" />
+    <option name="cachedIndexableFilesCount" value="4442" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -199,7 +197,7 @@
       <workItem from="1765298970234" duration="988000" />
       <workItem from="1766947129305" duration="3068000" />
       <workItem from="1768568380220" duration="20491000" />
-      <workItem from="1768636094358" duration="681000" />
+      <workItem from="1768636094358" duration="11450000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -297,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768576725103</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix: refactored pulsar to a separate docker-compose and using the official pulsar image">
+      <option name="closed" value="true" />
+      <created>1768636972386</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1768636972386</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +320,7 @@
     <MESSAGE value="chore: fixed pulsar Dockerfile to use alpine instead of ubuntu" />
     <MESSAGE value="chore: added GitHub Actions workflow for releasing analytics platform" />
     <MESSAGE value="chore: refactored pulsar to use the official docker image instead of building from scratch" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: refactored pulsar to use the official docker image instead of building from scratch" />
+    <MESSAGE value="fix: refactored pulsar to a separate docker-compose and using the official pulsar image" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: refactored pulsar to a separate docker-compose and using the official pulsar image" />
   </component>
 </project>
