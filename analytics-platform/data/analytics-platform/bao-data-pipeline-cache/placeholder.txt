@@ -1,0 +1,1 @@
+Allows the folders to be committed to git

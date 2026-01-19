@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: refactored pulsar to a separate docker-compose and using the official pulsar image">
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: update NGINX configuration to use specific service ports and remove unused upstreams">
+      <change afterPath="$PROJECT_DIR$/analytics-platform/data/analytics-platform/bao-data-pipeline-cache/placeholder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/bao-api-gateway/config/bao-api-gateway.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/bao-api-gateway/config/bao-api-gateway.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/data/analytics-platform/bao-data-pipeline/bao-ap-client-main/placeholder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/data/analytics-platform/bao-data-pipeline/bao-ap-client-main/placeholder.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4442" />
+    <option name="cachedIndexableFilesCount" value="5515" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -198,6 +199,8 @@
       <workItem from="1766947129305" duration="3068000" />
       <workItem from="1768568380220" duration="20491000" />
       <workItem from="1768636094358" duration="11450000" />
+      <workItem from="1768744087296" duration="332000" />
+      <workItem from="1768826069429" duration="2054000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -303,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768636972386</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: update NGINX configuration to use specific service ports and remove unused upstreams">
+      <option name="closed" value="true" />
+      <created>1768744339010</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768744339013</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +332,7 @@
     <MESSAGE value="chore: added GitHub Actions workflow for releasing analytics platform" />
     <MESSAGE value="chore: refactored pulsar to use the official docker image instead of building from scratch" />
     <MESSAGE value="fix: refactored pulsar to a separate docker-compose and using the official pulsar image" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: refactored pulsar to a separate docker-compose and using the official pulsar image" />
+    <MESSAGE value="fix: update NGINX configuration to use specific service ports and remove unused upstreams" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update NGINX configuration to use specific service ports and remove unused upstreams" />
   </component>
 </project>
