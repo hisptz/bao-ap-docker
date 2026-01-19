@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: updated docs to include migration instructions and docs for the new setup. refactored dhis2-gateway config to allow for easy backwards compatibility">
-      <change afterPath="$PROJECT_DIR$/analytics-platform/data/pulsar/bookkeeper/placeholder.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics-platform/data/pulsar/zookeeper/placeholder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: refactored volume directories and fixed issues with pulsar bookkeeper and zookeeper directories not having write permissions">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.pulsar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.pulsar.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +201,7 @@
       <workItem from="1768568380220" duration="20491000" />
       <workItem from="1768636094358" duration="11450000" />
       <workItem from="1768744087296" duration="332000" />
-      <workItem from="1768826069429" duration="4176000" />
+      <workItem from="1768826069429" duration="4917000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -335,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768828383642</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix: refactored volume directories and fixed issues with pulsar bookkeeper and zookeeper directories not having write permissions">
+      <option name="closed" value="true" />
+      <created>1768830294340</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1768830294340</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +360,7 @@
     <MESSAGE value="fix: update NGINX configuration to use specific service ports and remove unused upstreams" />
     <MESSAGE value="fix: bao-data-pipeline folder permission issues" />
     <MESSAGE value="chore: updated docs to include migration instructions and docs for the new setup. refactored dhis2-gateway config to allow for easy backwards compatibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: updated docs to include migration instructions and docs for the new setup. refactored dhis2-gateway config to allow for easy backwards compatibility" />
+    <MESSAGE value="fix: refactored volume directories and fixed issues with pulsar bookkeeper and zookeeper directories not having write permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: refactored volume directories and fixed issues with pulsar bookkeeper and zookeeper directories not having write permissions" />
   </component>
 </project>

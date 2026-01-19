@@ -83,7 +83,7 @@ Some services require the volume to be accessible by the user running inside the
 To configure the data pipeline service to be able to write to the volume, run the following command:
 
 ```shell
- chown -R 1001:1001 data/analytics-platform && chmod -R 775 data/analytics-platform
+ sudo chown -R 1001:1001 data/analytics-platform && sudo chmod -R 755 data/analytics-platform
 ```
 
 #### Pulsar
@@ -91,7 +91,7 @@ To configure the data pipeline service to be able to write to the volume, run th
 To configure the pulsar service to be able to write to the volume, run the following command:
 
 ```shell
- chown -R 10000:10000 data/pulsar && chmod -R 775 data/pulsar
+ sudo chown -R 10000:10000 data/pulsar && sudo chmod -R 755 data/pulsar
 ```
 
 ## Configuration
