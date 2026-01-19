@@ -74,6 +74,26 @@ First, pull all required images by running:
 docker compose pull 
 ```
 
+### Setting up volume permissions
+
+Some services require the volume to be accessible by the user running inside the docker container.
+
+#### Data pipeline
+
+To configure the data pipeline service to be able to write to the volume, run the following command:
+
+```shell
+ chown -R 1001:1001 data/analytics-platform && chmod -R 775 data/analytics-platform
+```
+
+#### Pulsar
+
+To configure the pulsar service to be able to write to the volume, run the following command:
+
+```shell
+ chown -R 10000:10000 data/pulsar && chmod -R 775 data/pulsar
+```
+
 ## Configuration
 
 For most services, the default configuration is sufficient. However, some services require additional configuration.
