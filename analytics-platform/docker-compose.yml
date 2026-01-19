@@ -124,7 +124,7 @@ services:
         ports:
             - "9089:8092"
         volumes:
-            - ./dhis2-superset-gateway/config/dhis2-superset-gateway.properties:/opt/dhis2-superset-gateway/dhis2-superset-gateway.properties
+            - ./dhis2-superset-gateway/config/dhis2-superset-gateway.conf:/opt/dhis2-superset-gateway/dhis2-superset-gateway.conf
         depends_on:
             superset:
                 condition: service_healthy

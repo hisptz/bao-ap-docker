@@ -1,6 +1,7 @@
 # Analytics Platform Setup With Docker
 
 ## Overview
+
 A docker compose setup for the analytics platform with all its components and dependencies.
 
 ## Prerequisites
@@ -20,18 +21,49 @@ This setup requires the latest version of docker (> 28.4.0) and docker compose (
 - DHIS2 Superset Gateway - API gateway for connecting DHIS2 to Superset
 - Proxy - Reverse proxy for the analytics platform
 
-## Installation
+## Migration from the old setup
 
-To install the setup, clone this repository
+If you already cloned the old setup, you can migrate to the new setup by downloading the release file from the
+[releases page](https://github.com/Baosystems/bao-ap-docker/releases)
 
 ```shell
- git clone https://github.com/hisptz/bao-ap-docker
+wget https://github.com/hisptz/bao-ap-docker/releases/download/<latest-tag-here>/analytics-platform.zip
 ```
 
-And then navigate to the cloned directory.
+And then unzip the downloaded archive:
 
 ```shell
-cd bao-ap-docker
+  unzip analytics-platform.zip
+```
+
+Then move or copy the `docker-compose.yml` and the `docker-compose.pulsar.yml` files to the root of the cloned
+repository in the old setup. The new `docker-compose.yml` should replace the old one.
+
+To clean up the setup, you can delete the downloaded analytics-platform.zip file and the unzipped folder. You can also
+delete the `Dockerfile` files in the `bao-data-pipeline`, `bao-identity`, `bao-api-gateway`, `dhis2-superset-gateway`
+folders. You can also delete the pulsar folder.
+
+## Installation
+
+To install the setup, download the latest release from
+the [releases page](https://github.com/Baosystems/bao-ap-docker/releases).
+
+You can use wget to download the release:
+
+```shell
+ wget https://github.com/hisptz/bao-ap-docker/releases/download/<latest-tag-here>/analytics-platform.zip
+```
+
+And then unzip the downloaded archive:
+
+```shell
+  unzip analytics-platform.zip
+```
+
+An then navigate to the extracted folder:
+
+```shell
+cd analytics-platform
 ```
 
 ## Setup
@@ -40,12 +72,6 @@ First, pull all required images by running:
 
 ```shell 
 docker compose pull 
-```
-
-Then, build the rest of the images by running:
-
-```shell
-docker compose build
 ```
 
 ## Configuration
