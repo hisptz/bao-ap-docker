@@ -35,6 +35,7 @@ services:
             - ./data/clickhouse/data:/var/lib/clickhouse
             - ./data/clickhouse/logs:/var/log/clickhouse-server
             - ./clickhouse/config/performance.xml:/etc/clickhouse-server/config.d/performance.xml:ro
+            - ./clickhouse/config/users.xml:/etc/clickhouse-server/users.d/users.xml:ro
         healthcheck:
             test: [ "CMD", "clickhouse", "client", "--host", "localhost", "--query", "SELECT 1" ]
             interval: 10s
