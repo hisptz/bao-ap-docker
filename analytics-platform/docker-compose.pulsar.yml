@@ -21,6 +21,8 @@ services:
             interval: 10s
             timeout: 5s
             retries: 30
+        networks:
+            - ap
 
     # Init cluster metadata
     pulsar-init:
@@ -40,6 +42,8 @@ services:
         depends_on:
             zookeeper:
                 condition: service_healthy
+        networks:
+            - ap
 
     # Start bookie
     bookie:
@@ -63,6 +67,8 @@ services:
         volumes:
             - ./data/pulsar/bookkeeper:/pulsar/data/bookkeeper
         command: bash -c "bin/apply-config-from-env.py conf/bookkeeper.conf && exec bin/pulsar bookie"
+        networks:
+            - ap
 
     # Start broker
     pulsar:
@@ -91,3 +97,5 @@ services:
             timeout: 5s
             retries: 30
             start_period: 5s
+        networks:
+            - ap

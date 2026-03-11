@@ -15,6 +15,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     redis:
         image: redis:latest
         mem_limit: 2gb
@@ -26,6 +28,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     clickhouse:
         image: clickhouse/clickhouse-server:latest
         mem_limit: 16gb
@@ -42,6 +46,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     superset:
         image: ghcr.io/hisptz/bao-ap-docker/bao-superset:latest
         environment:
@@ -62,6 +68,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     gateway:
         image: ghcr.io/hisptz/bao-ap-docker/bao-api-gateway:latest
         mem_limit: 2gb
@@ -78,6 +86,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     identity:
         image: ghcr.io/hisptz/bao-ap-docker/bao-identity:latest
         mem_limit: 2gb
@@ -98,6 +108,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     data-pipeline:
         image: ghcr.io/hisptz/bao-ap-docker/bao-data-pipeline:latest
         mem_limit: 6gb
@@ -119,6 +131,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     dhis2-gateway:
         image: ghcr.io/hisptz/bao-ap-docker/dhis2-superset-gateway:latest
         mem_limit: 2gb
@@ -135,6 +149,8 @@ services:
             timeout: 5s
             retries: 5
         restart: unless-stopped
+        networks:
+            - ap
     proxy:
         image: nginx:latest
         ports:
@@ -153,4 +169,8 @@ services:
             superset:
                 condition: service_started
         restart: unless-stopped
+        networks:
+            - ap
 
+networks:
+    ap:

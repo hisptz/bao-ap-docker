@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: pulsar healthcheck test updated to use curl, updated docs to include sudo in the volume permission commands">
-      <change afterPath="$PROJECT_DIR$/analytics-platform/clickhouse/config/users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: added users.xml configuration for clickhouse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.pulsar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.pulsar.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="62" />
+    <option name="cachedIndexableFilesCount" value="2232" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -59,35 +58,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.analytics-platform: Compose Deployment.executor": "Run",
-    "Docker.dhis2-superset-gateway/Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.clickhouse: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.proxy: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Docker.pulsar/Dockerfile.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/gnnko/projects/hisptz/bao-ap-docker/analytics-platform/clickhouse/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.analytics-platform: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dhis2-superset-gateway/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.clickhouse: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.proxy: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.pulsar/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gnnko/projects/hisptz/bao-ap-docker/analytics-platform/clickhouse/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1770271893425" />
     <option name="spentUsd" value="0.051157553" />
@@ -97,11 +96,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/analytics-platform/clickhouse/config" />
       <recent name="$PROJECT_DIR$/analytics-platform/data/analytics-platform/pulsar" />
       <recent name="$PROJECT_DIR$/analytics-platform/data/analytics-platform/pulsar/zookeper" />
       <recent name="$PROJECT_DIR$/analytics-platform/data/analytics-platform/pulsar/zookeeper" />
       <recent name="$PROJECT_DIR$/analytics-platform" />
-      <recent name="$PROJECT_DIR$/compose" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/analytics-platform/data" />
@@ -209,7 +208,8 @@
       <workItem from="1769006868760" duration="627000" />
       <workItem from="1769063738181" duration="86000" />
       <workItem from="1772020271344" duration="2806000" />
-      <workItem from="1772106231145" duration="341000" />
+      <workItem from="1772106231145" duration="3044000" />
+      <workItem from="1772441198974" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -355,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768831123993</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix: added users.xml configuration for clickhouse">
+      <option name="closed" value="true" />
+      <created>1772106703180</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1772106703180</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +386,7 @@
     <MESSAGE value="chore: updated docs to include migration instructions and docs for the new setup. refactored dhis2-gateway config to allow for easy backwards compatibility" />
     <MESSAGE value="fix: refactored volume directories and fixed issues with pulsar bookkeeper and zookeeper directories not having write permissions" />
     <MESSAGE value="fix: pulsar healthcheck test updated to use curl, updated docs to include sudo in the volume permission commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: pulsar healthcheck test updated to use curl, updated docs to include sudo in the volume permission commands" />
+    <MESSAGE value="fix: added users.xml configuration for clickhouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: added users.xml configuration for clickhouse" />
   </component>
 </project>
