@@ -259,3 +259,5 @@ set it up using the following values:
 - Password: dhis2-db-password
 - Database name: dhis-db-name
 
+## Version
+Current version: 0.0.1
