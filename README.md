@@ -67,6 +67,35 @@ An then navigate to the extracted folder:
 cd analytics-platform
 ```
 
+## Upgrade
+
+To upgrade an existing setup to a new release, download the new release into the same parent directory that
+contains your existing `analytics-platform` folder (i.e. the directory you originally ran `unzip` in).
+
+```shell
+wget https://github.com/hisptz/bao-ap-docker/releases/download/<latest-tag-here>/analytics-platform.zip
+```
+
+Then unzip the downloaded archive in that same location:
+
+```shell
+unzip analytics-platform.zip
+```
+
+Since the `analytics-platform` folder already exists, `unzip` will prompt you for each file that already exists,
+for example `replace analytics-platform/docker-compose.yml? [y]es, [n]o, [A]ll, [N]one, [r]ename:`. Choose `A` to
+replace all the old files with the new release's files.
+
+Once the files are replaced, pull the updated images and restart the services:
+
+```shell
+docker compose pull
+```
+
+```shell
+docker compose up -d
+```
+
 ## Setup
 
 First, pull all required images by running:
