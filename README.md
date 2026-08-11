@@ -20,6 +20,7 @@ This setup requires the latest version of docker (> 28.4.0) and docker compose (
 - Gateway - API gateway for the analytics platform
 - DHIS2 Superset Gateway - API gateway for connecting DHIS2 to Superset
 - Proxy - Reverse proxy for the analytics platform
+- PyServe (optional) - Python code execution and formatting service for integration with other services
 
 ## Migration from the old setup
 
@@ -171,6 +172,29 @@ The NGINX service configuration can be found in the `nginx/config/analytics-plat
 provided in the [documentation](https://docs.ap.baosystems.com/sysadmin/middleware-installation/#nginx)
 
 There is also a configuration file for superset included in the `nginx/config/superset.conf` file.
+
+### PyServe (pyserve, optional)
+
+PyServe is an optional, lightweight Python backend used for executing and formatting Python code, for integration
+with other services in the platform (for example, custom scripting/transform steps). It is defined separately from
+the core components in `docker-compose.optional.yml`, which is pulled in via the `include:` directive at the top of
+`docker-compose.yml`.
+
+Unlike the other services, PyServe has no configuration file to mount — the default image configuration is
+sufficient for most setups. The service listens on port `8000` inside the container, exposed on the host at
+`9097` by default. You can change the host port by editing the `ports` mapping in `docker-compose.optional.yml`.
+
+> **Security note:** PyServe executes Python code submitted to it via its API. Treat it like any other
+> code-execution sandbox — do not expose it publicly through the proxy unless you have a specific need and have
+> reviewed the access controls around it, and prefer keeping it reachable only from other trusted services on the
+> `ap` network.
+
+If you don't need PyServe, you can disable it by removing (or commenting out) the `docker-compose.optional.yml`
+line from the `include:` section of `docker-compose.yml`.
+
+See the [PyServe installation documentation](https://docs.ap.baosystems.com/sysadmin/pyserve-installation/) for
+more background on the service and its non-Docker installation, including its API endpoints
+(`POST /pyserve/format` and `POST /pyserve/execute`).
 
 ## Running the setup
 
