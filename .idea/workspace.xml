@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="fix: added shared network configuration to all services in docker-compose files">
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: adds a version to README.md for triggering releases">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,65 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.00003181376638" />
+      <entry key="MS500" value="1.1379200145045645" />
+      <entry key="S2" value="1.97743088199113" />
+      <entry key="S5" value="3.2906851681421374" />
+      <entry key="S10" value="5.563971322399958" />
+      <entry key="S30" value="11.60581570249144" />
+      <entry key="S60" value="15.2578661551642" />
+      <entry key="M2" value="17.794455455104178" />
+      <entry key="M5" value="19.62553659670077" />
+      <entry key="M10" value="20.296262013096396" />
+      <entry key="M15" value="20.527084077510974" />
+      <entry key="M30" value="20.76164056270652" />
+      <entry key="H1" value="20.88034057705009" />
+      <entry key="H2" value="20.940049815930053" />
+      <entry key="H4" value="20.9699947212112" />
+      <entry key="D1" value="20.994994921760675" />
+      <entry key="W1" value="20.999284885927793" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.9108530313568904E-35" />
+      <entry key="MS500" value="1.313573260160219E-7" />
+      <entry key="S2" value="0.019037660369924863" />
+      <entry key="S5" value="0.20504322779918158" />
+      <entry key="S10" value="0.45281699150891136" />
+      <entry key="S30" value="0.7679051348510489" />
+      <entry key="S60" value="0.8763019655638398" />
+      <entry key="M2" value="0.936110017873882" />
+      <entry key="M5" value="0.973936758051744" />
+      <entry key="M10" value="0.9868823425574824" />
+      <entry key="M15" value="0.9912356634962942" />
+      <entry key="M30" value="0.9956081877406867" />
+      <entry key="H1" value="0.9978016775595673" />
+      <entry key="H2" value="0.998900234037197" />
+      <entry key="H4" value="0.9994499657497603" />
+      <entry key="D1" value="0.9999083066083344" />
+      <entry key="W1" value="0.9999869004292629" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9526683050466518" />
+      <entry key="MS500" value="1.1269310188252435" />
+      <entry key="S2" value="1.9869233588714352" />
+      <entry key="S5" value="3.4683329281998723" />
+      <entry key="S10" value="5.9786481709356485" />
+      <entry key="S30" value="12.340830836581725" />
+      <entry key="S60" value="16.112310037336062" />
+      <entry key="M2" value="18.717868529368307" />
+      <entry key="M5" value="20.593902652767454" />
+      <entry key="M10" value="21.280270634621925" />
+      <entry key="M15" value="21.51638378681851" />
+      <entry key="M30" value="21.75627057467216" />
+      <entry key="H1" value="21.8776505926526" />
+      <entry key="H2" value="21.938703572395998" />
+      <entry key="H4" value="21.96932128614115" />
+      <entry key="D1" value="21.994882639028113" />
+      <entry key="W1" value="21.999268844470265" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="AISelfReview" />
   </component>
@@ -73,6 +133,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
@@ -188,7 +249,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
       </set>
     </attachedChunks>
   </component>
@@ -218,6 +279,8 @@
       <workItem from="1773223120509" duration="2617000" />
       <workItem from="1773823157104" duration="626000" />
       <workItem from="1775624667387" duration="5431000" />
+      <workItem from="1782302511570" duration="484000" />
+      <workItem from="1786432285262" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -379,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773223190033</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="chore: adds a version to README.md for triggering releases">
+      <option name="closed" value="true" />
+      <created>1782302779786</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1782302779786</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +475,7 @@
     <MESSAGE value="fix: pulsar healthcheck test updated to use curl, updated docs to include sudo in the volume permission commands" />
     <MESSAGE value="fix: added users.xml configuration for clickhouse" />
     <MESSAGE value="fix: added shared network configuration to all services in docker-compose files" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: added shared network configuration to all services in docker-compose files" />
+    <MESSAGE value="chore: adds a version to README.md for triggering releases" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: adds a version to README.md for triggering releases" />
   </component>
 </project>
