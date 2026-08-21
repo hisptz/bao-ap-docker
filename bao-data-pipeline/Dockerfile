@@ -15,7 +15,7 @@ WORKDIR /app
 
 RUN apt update && apt upgrade -y
 
-RUN apt install -y openjdk-17-jdk apt-transport-https wget postgresql-client-common postgresql-client-16 clickhouse-client
+RUN apt install -y openjdk-17-jdk apt-transport-https wget postgresql-client-common postgresql-client-16 clickhouse-client zstd
 
 RUN wget https://bao-products-builds.s3.us-east-1.amazonaws.com/analytics-platform/master/bao-data-pipeline.jar
 

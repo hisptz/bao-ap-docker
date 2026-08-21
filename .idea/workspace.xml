@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: adds a version to README.md for triggering releases">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fe7fa3c2-34de-4619-9d81-9c0aaa28aa87" name="Changes" comment="chore: update workspace.xml and vcs.xml with new settings and commit inspection tools">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" beforeDir="false" afterPath="$PROJECT_DIR$/analytics-platform/nginx/config/analytics-platform.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.00003181376638" />
-      <entry key="MS500" value="1.1379200145045645" />
-      <entry key="S2" value="1.97743088199113" />
-      <entry key="S5" value="3.2906851681421374" />
-      <entry key="S10" value="5.563971322399958" />
-      <entry key="S30" value="11.60581570249144" />
-      <entry key="S60" value="15.2578661551642" />
-      <entry key="M2" value="17.794455455104178" />
-      <entry key="M5" value="19.62553659670077" />
-      <entry key="M10" value="20.296262013096396" />
-      <entry key="M15" value="20.527084077510974" />
-      <entry key="M30" value="20.76164056270652" />
-      <entry key="H1" value="20.88034057705009" />
-      <entry key="H2" value="20.940049815930053" />
-      <entry key="H4" value="20.9699947212112" />
-      <entry key="D1" value="20.994994921760675" />
-      <entry key="W1" value="20.999284885927793" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0000000339077246" />
+      <entry key="M5" value="1.0063800945899632" />
+      <entry key="M10" value="1.3659475547227287" />
+      <entry key="M15" value="2.4114401058509176" />
+      <entry key="M30" value="6.444139741891509" />
+      <entry key="H1" value="11.692305927150326" />
+      <entry key="H2" value="15.984581203948581" />
+      <entry key="H4" value="18.73910770818943" />
+      <entry key="D1" value="21.41759957019309" />
+      <entry key="W1" value="21.915793694724165" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.9108530313568904E-35" />
-      <entry key="MS500" value="1.313573260160219E-7" />
-      <entry key="S2" value="0.019037660369924863" />
-      <entry key="S5" value="0.20504322779918158" />
-      <entry key="S10" value="0.45281699150891136" />
-      <entry key="S30" value="0.7679051348510489" />
-      <entry key="S60" value="0.8763019655638398" />
-      <entry key="M2" value="0.936110017873882" />
-      <entry key="M5" value="0.973936758051744" />
-      <entry key="M10" value="0.9868823425574824" />
-      <entry key="M15" value="0.9912356634962942" />
-      <entry key="M30" value="0.9956081877406867" />
-      <entry key="H1" value="0.9978016775595673" />
-      <entry key="H2" value="0.998900234037197" />
-      <entry key="H4" value="0.9994499657497603" />
-      <entry key="D1" value="0.9999083066083344" />
-      <entry key="W1" value="0.9999869004292629" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.0769116727936352E-210" />
+      <entry key="S10" value="1.0377435486639439E-105" />
+      <entry key="S30" value="1.0124261345011018E-35" />
+      <entry key="S60" value="3.1818644447887816E-18" />
+      <entry key="M2" value="1.783778137770721E-9" />
+      <entry key="M5" value="3.1661853475419764E-4" />
+      <entry key="M10" value="0.017793777978669895" />
+      <entry key="M15" value="0.06815725821190573" />
+      <entry key="M30" value="0.26106945093577255" />
+      <entry key="H1" value="0.5109495581129047" />
+      <entry key="H2" value="0.7148073573438541" />
+      <entry key="H4" value="0.8454628065999439" />
+      <entry key="D1" value="0.9724092569357349" />
+      <entry key="W1" value="0.9960110461104899" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9526683050466518" />
-      <entry key="MS500" value="1.1269310188252435" />
-      <entry key="S2" value="1.9869233588714352" />
-      <entry key="S5" value="3.4683329281998723" />
-      <entry key="S10" value="5.9786481709356485" />
-      <entry key="S30" value="12.340830836581725" />
-      <entry key="S60" value="16.112310037336062" />
-      <entry key="M2" value="18.717868529368307" />
-      <entry key="M5" value="20.593902652767454" />
-      <entry key="M10" value="21.280270634621925" />
-      <entry key="M15" value="21.51638378681851" />
-      <entry key="M30" value="21.75627057467216" />
-      <entry key="H1" value="21.8776505926526" />
-      <entry key="H2" value="21.938703572395998" />
-      <entry key="H4" value="21.96932128614115" />
-      <entry key="D1" value="21.994882639028113" />
-      <entry key="W1" value="21.999268844470265" />
+      <entry key="MS100" value="0.05671994720732255" />
+      <entry key="MS500" value="0.5633096142486396" />
+      <entry key="S2" value="0.8663368564000873" />
+      <entry key="S5" value="0.9442233072222145" />
+      <entry key="S10" value="0.9717115349846448" />
+      <entry key="S30" value="0.9904801721236224" />
+      <entry key="S60" value="0.9952287034263142" />
+      <entry key="M2" value="0.9976115349125376" />
+      <entry key="M5" value="1.0057388163693597" />
+      <entry key="M10" value="1.3832113614676733" />
+      <entry key="M15" value="2.479145451183319" />
+      <entry key="M30" value="6.70479328337815" />
+      <entry key="H1" value="12.202924008587592" />
+      <entry key="H2" value="16.69917232816797" />
+      <entry key="H4" value="19.58444619878594" />
+      <entry key="D1" value="22.38998548270243" />
+      <entry key="W1" value="22.911801336168896" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -280,7 +278,7 @@
       <workItem from="1773823157104" duration="626000" />
       <workItem from="1775624667387" duration="5431000" />
       <workItem from="1782302511570" duration="484000" />
-      <workItem from="1786432285262" duration="2476000" />
+      <workItem from="1786432285262" duration="11518000" />
     </task>
     <task id="LOCAL-00001" summary="chore: setup docker implementation of the analytics-platform">
       <option name="closed" value="true" />
@@ -450,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782302779786</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="chore: update workspace.xml and vcs.xml with new settings and commit inspection tools">
+      <option name="closed" value="true" />
+      <created>1786435005128</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1786435005128</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +482,7 @@
     <MESSAGE value="fix: added users.xml configuration for clickhouse" />
     <MESSAGE value="fix: added shared network configuration to all services in docker-compose files" />
     <MESSAGE value="chore: adds a version to README.md for triggering releases" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: adds a version to README.md for triggering releases" />
+    <MESSAGE value="chore: update workspace.xml and vcs.xml with new settings and commit inspection tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update workspace.xml and vcs.xml with new settings and commit inspection tools" />
   </component>
 </project>
